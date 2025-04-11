@@ -15,8 +15,8 @@ import Burial from './component/Funeral';
 import Team from './component/teamtwc';
 import About from './component/abouttwc';
 import Wedding from './component/wedd';
-import History from './component/History';
-import Gallery from './component/Gallery';
+import History from './component/twchistory';
+import Gallery from './component/gallerytwc';
 
 function App() {
   useEffect(() => {
@@ -37,7 +37,7 @@ function App() {
           <Route path="/abouttwc" element={<About />} />
           <Route path="/teams" element={<Team />} />
           <Route path="/History" element={<History />} />
-          <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/gallerytwc" element={<Gallery />} />
         </Routes>
 
         <Footer />
