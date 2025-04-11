@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 // Components
 import Nav from './component/navbar';
-import Footer from './component/footertwc';
+import Footer from './component/twcfooter';
 
 // Pages
 import Twc from './component/landingpage';
