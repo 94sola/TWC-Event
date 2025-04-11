@@ -34,7 +34,7 @@ const Nav = () => {
             { label: "Birthday", link: "/birthday" },
             { label: "House Warming", link: "/housewarming" },
             { label: "Naming Ceremony", link: "/naming" },
-            { label: "Funeral", link: "/funeral" },
+            { label: "Funeral", link: "/Burial" },
             { label: "Coronation ", link: "/coronation" },
           ],
         },
@@ -118,7 +118,7 @@ const Nav = () => {
               </li>
             ))}
             <li>
-              <Link to="/gallery" className="hover:text-cyan-400">Gallery</Link>
+              <Link to="/Gallery" className="hover:text-cyan-400">Gallery</Link>
             </li>
             <li>
               <Link to="/blog" className="hover:text-cyan-400">Blog</Link>
@@ -199,7 +199,7 @@ const Nav = () => {
               </li>
             ))}
             <li>
-              <Link to="/gallery" className="hover:text-cyan-400" onClick={closeMobileMenu}>Gallery</Link>
+              <Link to="/Gallery" className="hover:text-cyan-400" onClick={closeMobileMenu}>Gallery</Link>
             </li>
             <li>
               <Link to="/blog" className="hover:text-cyan-400" onClick={closeMobileMenu}>Blog</Link>

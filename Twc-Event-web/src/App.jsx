@@ -11,12 +11,12 @@ import Footer from './component/Footer';
 import Twc from './component/landingpage';
 import Corporate from './component/Corporate';
 import Social from './component/sociall';
-import Burial from './Component/burial';
+import Burial from './component/Burial';
 import Team from './component/teamtwc';
 import About from './component/abouttwc';
 import Wedding from './component/wedd';
 import History from './component/history';
-import Gallery from './component/gallery';
+import Gallery from './component/Gallery';
 
 function App() {
   useEffect(() => {
@@ -33,11 +33,11 @@ function App() {
           <Route path="/Corporate" element={<Corporate />} />
           <Route path="/sociall" element={<Social />} />
           <Route path="/wedding" element={<Wedding />} />
-          <Route path="/burial" element={<Burial />} />
+          <Route path="/Burial" element={<Burial />} />
           <Route path="/abouttwc" element={<About />} />
           <Route path="/teams" element={<Team />} />
           <Route path="/history" element={<History />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/Gallery" element={<Gallery />} />
         </Routes>
 
         <Footer />
