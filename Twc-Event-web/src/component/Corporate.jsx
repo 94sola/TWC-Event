@@ -1,6 +1,6 @@
 
 
-const Contaminant = () => {
+const Corporate = () => {
     return (
         <div className="h-lvh bg-purple-500">
 
@@ -9,4 +9,4 @@ const Contaminant = () => {
 };
 
 
-export default Contaminant;
+export default Corporate;
