@@ -9,7 +9,7 @@ import Footer from './component/Footer';
 
 // Pages
 import Twc from './component/landingpage'; // Home Page (includes Chemxpert, Labsoft, etc.)
-import Corporate from './Component/corporate';
+import Corporate from './Component/Corporate';
 import Social from './component/sociall';
 import Burial from './Component/burial';
 import Team from './component/teamtwc';
@@ -31,7 +31,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Twc />} />
-          <Route path="/corporate" element={<Corporate />} />
+          <Route path="/Corporate" element={<Corporate />} />
           <Route path="/sociall" element={<Social />} />
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/burial" element={<Burial />} />
