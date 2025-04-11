@@ -28,7 +28,7 @@ const Nav = () => {
       title: "Services",
       links: [
         {
-          label: "Social Event", link: "/sociall",
+          label: "Social Event", link: "/social",
           submenu: [
             { label: "Wedding", link: "/wedding" },
             { label: "Birthday", link: "/birthday" },
@@ -60,8 +60,8 @@ const Nav = () => {
     {
       title: "About",
       links: [
-        { label: "Company Info", link: "/twchistory" },
-        { label: "FAQs", link: "/abouttwc" },
+        { label: "Our Story", link: "/history" },
+        { label: "Mission & vision", link: "/abouttwc" },
       ],
     },
   ];
@@ -71,12 +71,11 @@ const Nav = () => {
       <div className="flex items-center justify-between py-2 md:py-4">
         {/* Logo */}
         <Link to="/" onClick={closeMobileMenu} className="flex flex-col items-center">
-          <img src={logo} alt="Logo" className="h-20 w-32 object-contain" />
-          <h5 className="text-base md:text-lg font-semibold text-cyan-500 mt-1">TWC Event</h5>
+          <img src={logo} alt="Logo" className="h-18 w-28 object-contain" />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex flex-grow justify-center text-orange-500">
+        <nav className="hidden md:flex flex-grow justify-center cursor-pointer text-orange-500">
           <ul className="flex gap-6 text-lg font-medium items-center">
             <li>
               <Link to="/" className="hover:text-cyan-500">Home</Link>
@@ -149,7 +148,7 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white text-orange-500 shadow-lg px-6 py-4 flex flex-col w-full border-t border-orange-300">
+        <div className="md:hidden bg-white text-orange-500 shadow-lg px-6 py-2 flex flex-col w-full border-t border-orange-300">
           <input
             type="text"
             placeholder="Search..."

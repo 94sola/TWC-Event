@@ -17,6 +17,7 @@ const About = () => {
       videoRef.current.pause();
     } else {
       videoRef.current.play();
+      videoRef.current.muted = false; // Unmute the video when playing
     }
     setIsPlaying(!isPlaying);
   };
@@ -37,13 +38,12 @@ const About = () => {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="w-full lg:w-[75%] h-[280px] lg:h-[600px] relative"
+          className="w-full lg:w-[75%] h-[280px] lg:h-[800px] relative"
         >
           <video
             ref={videoRef}
             src={abou}
             className="w-full h-full object-cover rounded-none"
-            muted
           />
           {/* Centered Play/Pause Button */}
           <button
@@ -67,18 +67,16 @@ const About = () => {
           transition={{ duration: 1 }}
           className="bg-cyan-500 text-white 
                     w-full h-full 
-                    lg:w-96 lg:h-[600px] 
-                    px-10 py-10 
+                    lg:w-96 lg:h-[760px] 
+                    px-10 py-2 
                     flex flex-col justify-center items-start 
-                    shadow-2xl rounded-none lg:rounded-l-2xl z-10"
+                    shadow-2xl rounded-none z-10"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-cyan-800 mb-4">
             Who We Are
           </h2>
           <p className="text-base md:text-lg text-orange-100 leading-relaxed mb-6">
-            Experiences crafted with excellence and heart—from concept to celebration.
-            Whether it’s an intimate wedding or a grand corporate event, our creative
-            touch ensures unforgettable memories that reflect your vision and style.
+           At Twcevents, we believe every event is an opportunity to leave a lasting impression. 
           </p>
 
           {/* CTA Button */}

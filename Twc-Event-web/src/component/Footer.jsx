@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer className="bg-orange-500 text-black py-12 px-6 md:px-12 lg:px-14 font-sans">
      
-      <div className="max-w-9xl bg-white text-black p-8 rounded-lg shadow-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:text-left">
+      <div className="max-w-9xl bg-white text-black p-8 rounded-lg shadow-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:px-20 px-8 gap-12 text-center md:text-left">
         {/* Logo & Description */}
         <div data-aos="fade-up">
           <Link to="/" className="block">
@@ -69,8 +69,8 @@ const Footer = () => {
           <div className="flex items-start gap-3">
             <FontAwesomeIcon icon={faPhone} className="text-cyan-500" />
             <p>
-              <a href="tel:+2348001234567" className="hover:underline">
-                +234 800 123 4567
+              <a href="tel:+2349123991109" className="hover:underline">
+                +234 809 844 0865 / +234 9123 991 109
               </a>
             </p>
           </div>
@@ -104,7 +104,7 @@ const Footer = () => {
                 { icon: faTwitter, label: "Twitter", color: "blue-400", link: "https://twitter.com" },
                 { icon: faInstagram, label: "Instagram", color: "pink-500", link: "https://www.instagram.com/twcevents?igsh=ZzljeW96Y2U4Y2N5" },
                 { icon: faLinkedinIn, label: "LinkedIn", color: "blue-700", link: "https://linkedin.com" },
-                { icon: faWhatsapp, label: "WhatsApp", color: "green-500", link: "https://wa.me/+2348001234567" }
+                { icon: faWhatsapp, label: "WhatsApp", color: "green-500", link: "https://wa.me/+2349123991109" }
               ].map((s, idx) => (
                 <a
                   key={idx}
@@ -123,9 +123,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="my-8 border-cyan-500" data-aos="fade-in" />
-
-      <div className="text-center space-y-4 text-sm md:text-base dark:text-black">
+      <div className="text-center space-y-4 text-lg mt-10 md:text-base text-black ">
         <p>&copy; {year} TWC Event Planning Services. All rights reserved.</p>
         <p>Designed and Developed by the TWC Team — crafting creativity with excellence.</p>
       </div>

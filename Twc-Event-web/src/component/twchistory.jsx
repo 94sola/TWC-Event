@@ -1,10 +1,12 @@
-const  Events = () => {
-    return (
-        <div className="bg-red-400 h-lvh">
+import Hero from './history';
+import Heros from './history1';
 
-        </div>
-    )
-};
-
-export default  Events;
-
+export default function Home() {
+  return (
+    <div className="home-page">
+      
+      <Hero />
+      <Heros />
+    </div>
+  );
+}

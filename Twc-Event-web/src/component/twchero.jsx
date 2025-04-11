@@ -25,7 +25,7 @@ const slides = [
         Honoring <br /> Life with <br /> Grace
       </>
     ),
-    paragraph: "Burials planned with dignity and heartfelt care.",
+    paragraph: "Funeral planned with dignity and heartfelt care.",
     bgColor: "bg-cyan-500",
   },
   {
@@ -93,7 +93,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 bg-orange-500 text-white font-semibold text-lg rounded-full shadow-xl hover:bg-orange-700 transition-all"
+              className="px-6 py-3 bg-orange-500 text-white font-semibold cursor-pointer text-lg rounded-full shadow-xl hover:bg-orange-700 transition-all"
             >
               Plan Your Event
             </motion.button>

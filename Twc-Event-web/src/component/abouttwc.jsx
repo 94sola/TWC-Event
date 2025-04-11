@@ -1,13 +1,13 @@
 
 
-const About= () => {
-  return (
-      <div className="h-lvh bg-yellow-500">
+  const About= () => {
+    return (
+        <div className="h-lvh bg-yellow-500">
 
 
-      </div>
-  )
-};
+        </div>
+    )
+  };
 
 
-export default About;
+  export default About;
