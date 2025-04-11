@@ -9,7 +9,7 @@ A modern full-stack event planning web application for **TWC Event Services**.
 
 - 📱 Responsive and sleek UI built with **React + Tailwind CSS**
 - 🧠 Dynamic routing with **React Router**
-- ⚙️ Backend powered by **Node.js + Express**
+- ⚙️ Backend powered by **Node.js + Express + mongoDB**
 - 🌐 CORS-enabled API routes
 - 📦 Modular and scalable folder structure
 - ☀️ Dark/Light mode toggle
@@ -23,10 +23,5 @@ A modern full-stack event planning web application for **TWC Event Services**.
 | Tailwind CSS   | Express.js      |
 | React Router   | REST API        |
 
-## 📦 Setup Instructions
 
-### 1. Clone the repository
 
-```bash
-git clone https://github.com/94sola/TWC-Event-web.git
-cd TWC-Event-web
