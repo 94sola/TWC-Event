@@ -17,6 +17,7 @@ const About = () => {
       videoRef.current.pause();
     } else {
       videoRef.current.play();
+      videoRef.current.muted = false; // Unmute the video when playing
     }
     setIsPlaying(!isPlaying);
   };
@@ -37,13 +38,12 @@ const About = () => {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="w-full lg:w-[75%] h-[280px] lg:h-[600px] relative"
+          className="w-full lg:w-[75%] h-[280px] lg:h-[800px] relative"
         >
           <video
             ref={videoRef}
             src={abou}
             className="w-full h-full object-cover rounded-none"
-            muted
           />
           {/* Centered Play/Pause Button */}
           <button
@@ -76,9 +76,7 @@ const About = () => {
             Who We Are
           </h2>
           <p className="text-base md:text-lg text-orange-100 leading-relaxed mb-6">
-            Experiences crafted with excellence and heart—from concept to celebration.
-            Whether it’s an intimate wedding or a grand corporate event, our creative
-            touch ensures unforgettable memories that reflect your vision and style.
+          We are storytellers, curators of moments, and creators of unforgettable experiences. At Twcevents, we believe every event is an opportunity to leave a lasting impression. With a passion for detail and a flair for creativity, we specialize in planning and executing events that reflect your vision, values, and style. From elegant weddings to impactful corporate gatherings and everything in between, our mission is to handle the stress so you can enjoy the moment. We don’t just plan events, we craft experiences that speak to the heart.
           </p>
 
           {/* CTA Button */}

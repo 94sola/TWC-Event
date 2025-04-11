@@ -69,8 +69,8 @@ const Footer = () => {
           <div className="flex items-start gap-3">
             <FontAwesomeIcon icon={faPhone} className="text-cyan-500" />
             <p>
-              <a href="tel:+2348001234567" className="hover:underline">
-                +234 800 123 4567
+              <a href="tel:+2349123991109" className="hover:underline">
+                +234 809 844 0865 / +234 9123 991 109
               </a>
             </p>
           </div>
@@ -104,7 +104,7 @@ const Footer = () => {
                 { icon: faTwitter, label: "Twitter", color: "blue-400", link: "https://twitter.com" },
                 { icon: faInstagram, label: "Instagram", color: "pink-500", link: "https://www.instagram.com/twcevents?igsh=ZzljeW96Y2U4Y2N5" },
                 { icon: faLinkedinIn, label: "LinkedIn", color: "blue-700", link: "https://linkedin.com" },
-                { icon: faWhatsapp, label: "WhatsApp", color: "green-500", link: "https://wa.me/+2348001234567" }
+                { icon: faWhatsapp, label: "WhatsApp", color: "green-500", link: "https://wa.me/+2349123991109" }
               ].map((s, idx) => (
                 <a
                   key={idx}
