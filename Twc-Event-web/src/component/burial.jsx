@@ -1,6 +1,6 @@
 
 
-const Phyto = () => {
+const Burial = () => {
     return (
         <div className="h-lvh bg-green-500">
 
@@ -9,4 +9,4 @@ const Phyto = () => {
 };
 
 
-export default Phyto;
+export default Burial;

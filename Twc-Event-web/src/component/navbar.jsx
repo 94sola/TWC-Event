@@ -60,7 +60,7 @@ const Nav = () => {
     {
       title: "About",
       links: [
-        { label: "Company Info", link: "/history" },
+        { label: "Company Info", link: "/History" },
         { label: "FAQs", link: "/abouttwc" },
       ],
     },

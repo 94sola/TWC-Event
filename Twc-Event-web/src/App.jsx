@@ -15,7 +15,7 @@ import Burial from './component/Burial';
 import Team from './component/teamtwc';
 import About from './component/abouttwc';
 import Wedding from './component/wedd';
-import History from './component/history';
+import History from './component/History';
 import Gallery from './component/Gallery';
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
           <Route path="/Burial" element={<Burial />} />
           <Route path="/abouttwc" element={<About />} />
           <Route path="/teams" element={<Team />} />
-          <Route path="/history" element={<History />} />
+          <Route path="/History" element={<History />} />
           <Route path="/Gallery" element={<Gallery />} />
         </Routes>
 
