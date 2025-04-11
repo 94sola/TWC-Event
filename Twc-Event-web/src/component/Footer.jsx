@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/image/logo.png";
-import Wrapper from "./Wrapper"; // Capitalized the component import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarkerAlt,
@@ -33,7 +32,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-orange-500 text-black py-12 px-6 md:px-12 lg:px-14 font-sans">
-      <Wrapper /> {/* Updated to use the correct Wrapper component */}
+     
       <div className="max-w-9xl bg-white text-black p-8 rounded-lg shadow-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:text-left">
         {/* Logo & Description */}
         <div data-aos="fade-up">
