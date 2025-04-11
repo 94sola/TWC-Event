@@ -34,7 +34,7 @@ const Nav = () => {
             { label: "Birthday", link: "/birthday" },
             { label: "House Warming", link: "/housewarming" },
             { label: "Naming Ceremony", link: "/naming" },
-            { label: "Funeral", link: "/Burial" },
+            { label: "Funeral", link: "/Funeral" },
             { label: "Coronation ", link: "/coronation" },
           ],
         },

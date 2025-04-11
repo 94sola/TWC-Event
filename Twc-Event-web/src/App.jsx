@@ -11,7 +11,7 @@ import Footer from './component/Footer';
 import Twc from './component/landingpage';
 import Corporate from './component/Corporate';
 import Social from './component/sociall';
-import Burial from './component/Burial';
+import Burial from './component/Funeral';
 import Team from './component/teamtwc';
 import About from './component/abouttwc';
 import Wedding from './component/wedd';
@@ -33,7 +33,7 @@ function App() {
           <Route path="/Corporate" element={<Corporate />} />
           <Route path="/sociall" element={<Social />} />
           <Route path="/wedding" element={<Wedding />} />
-          <Route path="/Burial" element={<Burial />} />
+          <Route path="/Funeral" element={<Burial />} />
           <Route path="/abouttwc" element={<About />} />
           <Route path="/teams" element={<Team />} />
           <Route path="/History" element={<History />} />
