@@ -32,7 +32,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-orange-500 text-black py-12 px-6 md:px-12 lg:px-14 font-sans">
+    <Footer className="bg-orange-500 text-black py-12 px-6 md:px-12 lg:px-14 font-sans">
       <Wrapper>
         <div className="max-w-9xl bg-white text-black p-8 rounded-lg shadow-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:text-left">
           {/* Logo & Description */}
@@ -131,7 +131,7 @@ const Footer = () => {
           <p>Designed and Developed by the TWC Team — crafting creativity with excellence.</p>
         </div>
       </Wrapper>
-    </footer>
+    </Footer>
   );
 };
 
