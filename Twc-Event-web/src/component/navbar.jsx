@@ -39,7 +39,7 @@ const Nav = () => {
           ],
         },
         {
-          label: "Corporate Event" , link: "/corporate", 
+          label: "Corporate Event" , link: "/Corporate", 
           submenu: [
             { label: "Conferences", link: "/conference" },
             { label: "End of Year Party", link: "/endyearparty" },

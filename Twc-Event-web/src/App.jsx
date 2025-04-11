@@ -8,8 +8,8 @@ import Nav from './component/navbar';
 import Footer from './component/Footer';
 
 // Pages
-import Twc from './component/landingpage'; // Home Page (includes Chemxpert, Labsoft, etc.)
-import Corporate from './Component/Corporate';
+import Twc from './component/landingpage';
+import Corporate from './component/Corporate';
 import Social from './component/sociall';
 import Burial from './Component/burial';
 import Team from './component/teamtwc';
@@ -26,7 +26,6 @@ function App() {
   return (
     <div className="max-w-full">
       <Router>
-        {/* Navbar (Visible on all pages) */}
         <Nav />
 
         <Routes>
@@ -41,7 +40,6 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
 
-        {/* Footer (Visible on all pages) */}
         <Footer />
       </Router>
     </div>
