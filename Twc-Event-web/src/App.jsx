@@ -18,6 +18,8 @@ import Wedding from './component/wedd';
 import History from './component/twchistory';
 import Gallery from './component/gallerytwc';
 import Blog from './component/blog';
+import Contact from './component/contact';
+
 
 function App() {
   useEffect(() => {
@@ -32,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Twc />} />
           <Route path="/Corporate" element={<Corporate />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/social" element={<Social />} />
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/Funeral" element={<Burial />} />
