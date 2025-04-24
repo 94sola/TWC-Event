@@ -20,7 +20,7 @@ A modern full-stack event planning web application for **TWC Event Services**.
 | Frontend       | Backend         |
 |----------------|-----------------|
 | React.js       | Node.js         |
-| Tailwind CSS   | Express.js      |
+| Tailwind CSS   |     
 | React Router   | REST API        |
 
 
