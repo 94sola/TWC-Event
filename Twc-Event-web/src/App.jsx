@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 // Components
 import Nav from './component/navbar';
 import Footer from './component/Footer';
+import Whatsapp from './component/twcwh';
 
 // Pages
 import Twc from './component/landingpage';
@@ -20,14 +21,14 @@ import Gallery from './component/gallerytwc';
 import Blog from './component/blog';
 import Contact from './component/contact';
 
-
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <div className="max-w-full">
+    <div className="max-w-full relative">
+      <Whatsapp />
       <Router>
         <Nav />
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="/history" element={<History />} />
           <Route path="/gallerytwc" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <Footer />
