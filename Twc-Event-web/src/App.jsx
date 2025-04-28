@@ -18,6 +18,7 @@ import Wedding from './component/wedd';
 import History from './component/twchistory';
 import Gallery from './component/gallerytwc';
 import Blog from './component/blog';
+import Contact from './component/contact';
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/history" element={<History />} />
           <Route path="/gallerytwc" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <Footer />
