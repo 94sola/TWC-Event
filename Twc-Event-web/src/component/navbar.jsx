@@ -45,7 +45,7 @@ const Nav = () => {
             { label: "End of Year Party", link: "/endyearparty" },
             { label: "Product Launching", link: "/productlaunch" },
             { label: "Networking Events", link: "/networking" },
-            { label: "Award cermony", link: "/Award" },
+            { label: "Award ceremony", link: "/Award" },
           ],
         },
       ],
