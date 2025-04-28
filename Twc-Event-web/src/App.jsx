@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './index.css'
 
 // Components
 import Nav from './component/navbar';
@@ -26,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div className="max-w-full">
+    <div className="max-w-full relative">
       <Router>
         <Nav />
 
