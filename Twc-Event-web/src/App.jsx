@@ -20,7 +20,6 @@ import Gallery from './component/gallerytwc';
 import Blog from './component/blog';
 import Contact from './component/contact';
 
-
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -43,6 +42,7 @@ function App() {
           <Route path="/history" element={<History />} />
           <Route path="/gallerytwc" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <Footer />
