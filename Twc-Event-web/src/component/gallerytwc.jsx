@@ -1,5 +1,6 @@
 import { useState } from "react"; 
 import vid from "../assets/image/TWC vid.mp4";
+import vid2 from "../assets/image/Akinbola+Sylvia vid.mp4";
 import vid1 from "../assets/image/twc vid1.mp4";
 import twc1 from "../assets/image/5Z0A9322.JPG.jpg";
 import twc2 from "../assets/image/A (192).jpg";
@@ -25,11 +26,11 @@ import twc21 from "../assets/image/IMG_4183.jpg";
 import twc22 from "../assets/image/Modupe & Abimbola Wedding-2110.jpg";
 import twc23 from "../assets/image/Modupe & Abimbola Wedding-2743.jpg";
 import twc24 from "../assets/image/Modupe & Abimbola Wedding-2801.jpg";
-import twc25 from "../assets/image/mrsk 1.jpg";
+import twc25 from "../assets/image/twc31.JPG";
 import twc26 from "../assets/image/SODIPO(b) (2).jpg";
 import twc27 from "../assets/image/SODIPO(b) (5).jpg";
-import twc28 from "../assets/image/team 2.jpg";
-import twc29 from "../assets/image/team.jpg";
+import twc28 from "../assets/image/twc36.jpg";
+import twc29 from "../assets/image/twc37.jpg";
 import twc30 from "../assets/image/twc-a.jpg";
 import twc31 from "../assets/image/twc.jpg";
 import twc32 from "../assets/image/twc1.jpg";
@@ -45,8 +46,26 @@ import twc41 from "../assets/image/twc6.jpg";
 import twc42 from "../assets/image/twc7.jpg";
 import twc43 from "../assets/image/twc8.jpg";
 import twc44 from "../assets/image/twc9.jpg";
-import twc45 from "../assets/image/team 3.jpg";
-import twc46 from "../assets/image/mrsk2.jpg";
+import twc45 from "../assets/image/twc16.jpg";
+import twc46 from "../assets/image/twc17.jpg";
+import twc47 from "../assets/image/twc18.jpg";
+import twc48 from "../assets/image/twc19.jpg";
+import twc49 from "../assets/image/twc21.jpg";
+import twc50 from "../assets/image/twc22.jpg";
+import twc51 from "../assets/image/twc23.jpg";
+import twc52 from "../assets/image/twc24.JPG";
+import twc53 from "../assets/image/twc25.JPG";
+import twc54 from "../assets/image/twc26.JPG";
+import twc55 from "../assets/image/twc27.JPG";
+import twc56 from "../assets/image/twc28.JPG";
+import twc57 from "../assets/image/twc29.JPG";
+import twc58 from "../assets/image/twc30.JPG";
+import twc59 from "../assets/image/twc20.JPG";
+import twc60 from "../assets/image/twc37.JPG";
+import twc61 from "../assets/image/twc33.JPG";
+import twc62 from "../assets/image/twc34.JPG";
+import twc63 from "../assets/image/twc36.JPG";
+import twc64 from "../assets/image/twc32.JPG";
 
 
 const allImages = [
@@ -74,7 +93,7 @@ const allImages = [
   { src: twc22, category: "Weddings" },
   { src: twc23, category: "Weddings" },
   { src: twc24, category: "Weddings" },
-  { src: twc25, category: "Corporate" },
+  { src: twc25, category: "Weddings" },
   { src: twc26, category: "Funerals" },
   { src: twc27, category: "Funerals" },
   { src: twc28, category: "Corporate" },
@@ -96,6 +115,24 @@ const allImages = [
   { src: twc44, category: "Weddings" },
   { src: twc45, category: "Corporate" },
   { src: twc46, category: "Weddings" },
+  { src: twc47, category: "Weddings" },
+  { src: twc48, category: "Weddings" },
+  { src: twc49, category: "Weddings" },
+  { src: twc50, category: "Weddings" },
+  { src: twc51, category: "Weddings" },
+  { src: twc52, category: "Weddings" },
+  { src: twc53, category: "Weddings" },
+  { src: twc54, category: "Weddings" },
+  { src: twc55, category: "Weddings" },
+  { src: twc56, category: "Weddings" },
+  { src: twc57, category: "Weddings" },
+  { src: twc58, category: "Weddings" },
+  { src: twc59, category: "Weddings" },
+  { src: twc60, category: "Weddings" },
+  { src: twc61, category: "Weddings" },
+  { src: twc62, category: "Weddings" },
+  { src: twc63, category: "Weddings" },
+  { src: twc64, category: "Weddings" },
 ];
 
 const categories = ["All", "Weddings", "Birthdays", "Corporate", "Funerals"];
@@ -179,7 +216,17 @@ const Gallery = () => {
           controls
         />
       )}
+
+       {/* Top video for Weddings and All */}
+       {(selectedCategory === "Weddings" || selectedCategory === "All") && (
+        <video
+          src={vid2}
+          className="w-full rounded-xl h-[700px] shadow-lg mb-6"
+          controls
+        />
+      )}
     </div>
+
   );
 };
 
