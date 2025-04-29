@@ -20,6 +20,8 @@ import History from './component/twchistory';
 import Gallery from './component/gallerytwc';
 import Blog from './component/blog';
 import Contact from './component/contact';
+import Mission from './component/mission';
+import Testimonial from './component/testimonial';
 
 function App() {
   useEffect(() => {
@@ -45,6 +47,8 @@ function App() {
           <Route path="/gallerytwc" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/mission" element={<Mission />} />
+          <Route path="/testimonial" element={<Testimonial />} />
         </Routes>
 
         <Footer />

@@ -61,7 +61,8 @@ const Nav = () => {
       title: "About",
       links: [
         { label: "Our Story", link: "/history" },
-        { label: "Mission & vision", link: "/abouttwc" },
+        { label: "Mission & vision", link: "/mission" },
+        { label: "FAQ", link: "/abouttwc" },
       ],
     },
   ];
