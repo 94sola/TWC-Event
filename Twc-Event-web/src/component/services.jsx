@@ -82,11 +82,11 @@ const Contact = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-orange-200/60 to-transparent z-10 rounded-b-2xl lg:rounded-r-2xl" />
 
           {/* Text & Button Overlay */}
-          <div className="absolute bottom-8 left-8 z-20 text-orange-950 max-w-xl space-y-3">
-            <h2 className="text-2xl md:text-4xl font-bold drop-shadow-lg">
+          <div className="absolute bottom-8 left-8 z-20 text-orange-900 max-w-2xl space-y-3">
+            <h2 className="text-3xl md:text-5xl text-white font-bold drop-shadow-lg">
               Moments that Last Forever
             </h2>
-            <p className="text-sm md:text-base text-black drop-shadow-sm">
+            <p className="text-base md:text-xl text-black font-medium drop-shadow-sm">
               We help you plan and execute unforgettable experiences—whether it's a business conference or a vibrant party.
             </p>
             <Link

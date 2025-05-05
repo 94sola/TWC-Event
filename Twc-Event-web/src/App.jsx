@@ -23,11 +23,15 @@ import Contact from './component/contact';
 import Mission from './component/mission';
 import Testimonial from './component/testimonial';
 
+// Import ErrorBoundary
+import ErrorBoundary from './component/ErrorBoundary';
+
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
+  
   return (
     <div className="max-w-full relative">
       <Whatsapp />

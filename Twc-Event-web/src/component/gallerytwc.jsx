@@ -29,8 +29,8 @@ import twc24 from "../assets/image/Modupe & Abimbola Wedding-2801.jpg";
 import twc25 from "../assets/image/twc31.JPG";
 import twc26 from "../assets/image/SODIPO(b) (2).jpg";
 import twc27 from "../assets/image/SODIPO(b) (5).jpg";
-import twc28 from "../assets/image/twc36.jpg";
-import twc29 from "../assets/image/twc37.jpg";
+//import twc28 from "../assets/image/twc36.JPG";
+//import twc29 from "../assets/image/twc37.jpg";
 import twc30 from "../assets/image/twc-a.jpg";
 import twc31 from "../assets/image/twc.jpg";
 import twc32 from "../assets/image/twc1.jpg";
@@ -47,12 +47,12 @@ import twc42 from "../assets/image/twc7.jpg";
 import twc43 from "../assets/image/twc8.jpg";
 import twc44 from "../assets/image/twc9.jpg";
 import twc45 from "../assets/image/twc16.jpg";
-import twc46 from "../assets/image/twc17.jpg";
-import twc47 from "../assets/image/twc18.jpg";
-import twc48 from "../assets/image/twc19.jpg";
-import twc49 from "../assets/image/twc21.jpg";
-import twc50 from "../assets/image/twc22.jpg";
-import twc51 from "../assets/image/twc23.jpg";
+import twc46 from "../assets/image/twc17.JPG";
+import twc47 from "../assets/image/twc18.JPG";
+import twc48 from "../assets/image/twc19.JPG";
+import twc49 from "../assets/image/twc21.JPG";
+import twc50 from "../assets/image/twc22.JPG";
+import twc51 from "../assets/image/twc23.JPG";
 import twc52 from "../assets/image/twc24.JPG";
 import twc53 from "../assets/image/twc25.JPG";
 import twc54 from "../assets/image/twc26.JPG";
@@ -96,8 +96,8 @@ const allImages = [
   { src: twc25, category: "Weddings" },
   { src: twc26, category: "Funerals" },
   { src: twc27, category: "Funerals" },
-  { src: twc28, category: "Corporate" },
-  { src: twc29, category: "Corporate" },
+  //{ src: twc28, category: "Corporate" },
+ // { src: twc29, category: "Corporate" },
   { src: twc30, category: "Corporate" },
   { src: twc31, category: "Birthdays" },
   { src: twc32, category: "Weddings" },

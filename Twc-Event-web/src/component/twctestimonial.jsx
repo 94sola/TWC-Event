@@ -67,7 +67,8 @@ const TestimonialSlider = () => {
     <section className="w-full bg-gradient-to-b from-cyan-500 to-cyan-600 text-white py-16 px-4 md:px-12 lg:px-24 font-sans">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-10">Hear From Our Happy Clients</h2>
 
-      <div className="relative max-w-6xl mx-auto">
+      {/* Desktop View */}
+      <div className="hidden md:block relative max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-6 px-2">
           <button
             onClick={prevSlide}
@@ -116,6 +117,56 @@ const TestimonialSlider = () => {
             </motion.div>
           </AnimatePresence>
         </div>
+      </div>
+
+      {/* Mobile View */}
+      <div className="md:hidden max-w-md mx-auto">
+        <div className="flex justify-between items-center mb-4 px-4">
+          <button
+            onClick={prevSlide}
+            className="text-white bg-cyan-800 p-2 rounded-full hover:bg-cyan-600 transition"
+          >
+            <FaChevronLeft size={18} />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="text-white bg-cyan-800 p-2 rounded-full hover:bg-cyan-600 transition"
+          >
+            <FaChevronRight size={18} />
+          </button>
+        </div>
+
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={testimonial.id}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -30 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white text-gray-800 p-6 rounded-xl shadow-md mx-4"
+          >
+            <div className="mb-3">
+              <h3 className="text-lg font-bold text-cyan-800">{testimonial.name}</h3>
+              <p className="text-sm text-gray-800">{testimonial.title}</p>
+              <p className="text-sm text-orange-600 font-medium">{testimonial.event}</p>
+            </div>
+
+            <FaQuoteLeft className="text-cyan-400 text-xl mb-2" />
+            {testimonial.text.split(". ").map((line, i) => (
+              <motion.p
+                key={i}
+                custom={i}
+                variants={lineAnimation}
+                initial="hidden"
+                animate="visible"
+                className="text-gray-700 italic text-base leading-relaxed"
+              >
+                {line.trim()}
+              </motion.p>
+            ))}
+            <FaQuoteRight className="text-cyan-400 text-xl mt-4 float-right" />
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );
