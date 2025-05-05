@@ -67,7 +67,7 @@ const Mission = () => {
           <div className="text-center md:text-left">
             <h2 className="text-4xl font-extrabold text-pink-600 mb-4">🌈 Our Vision</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Our vision is to become the leading name in premium event planning, recognized for innovation, luxury, and heartfelt storytelling. TWC envisions a future where every moment we craft becomes a cherished masterpiece that brings people together in celebration, unity, and unforgettable joy.
+              Our vision is to become the leading name in premium event planning, recognized for innovation, luxury, and heartfelt storytelling. TWC Event Services envisions a future where every moment we craft becomes a cherished masterpiece that brings people together in celebration, unity, and unforgettable joy.
             </p>
           </div>
         </motion.div>

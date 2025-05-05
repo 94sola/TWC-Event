@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "What services does TWC Event Services offer?",
     answer:
-      "TWC provides full-service planning for weddings, birthdays, corporate events, product launches, anniversaries, and more. We handle décor, coordination, and vendor management with elegance and precision.",
+      "TWC Event Services provides full-service planning for weddings, birthdays, corporate events, product launches, anniversaries, and more. We handle décor, coordination, and vendor management with elegance and precision.",
   },
   {
     question: "How far in advance should I book?",
@@ -30,7 +30,7 @@ const faqs = [
       "Yes, we offer stand-alone décor, floral arrangements, stage styling, and customized themes even if we’re not handling full planning.",
   },
   {
-    question: "What makes TWC different from other planners?",
+    question: "What makes TWC Event Services different from other planners?",
     answer:
       "Our attention to detail, creative vision, personalized service, and joyful approach make every event unique and unforgettable.",
   },

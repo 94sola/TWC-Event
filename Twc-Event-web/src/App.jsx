@@ -22,11 +22,25 @@ import Blog from './component/blog';
 import Contact from './component/contact';
 import Mission from './component/mission';
 import Testimonial from './component/testimonial';
+import Award from './component/award';
+import Product from './component/product';
+import Party from './component/party';
+import Naming from './component/naming';
+import Conference from './component/conference';
+import Coronation from './component/coronation';
+import House from './component/housewarming';
+import Birthday from './component/birthday';
+import Endyear from './component/party';
+import Networking from './component/networking';
+
+// Import ErrorBoundary
+import ErrorBoundary from './component/ErrorBoundary';
 
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
 
   return (
     <div className="max-w-full relative">
@@ -39,6 +53,15 @@ function App() {
           <Route path="/Corporate" element={<Corporate />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/social" element={<Social />} />
+          <Route path="/birthday" element={<Birthday />} />
+          <Route path="/housewarming" element={<House />} />
+          <Route path="/naming" element={<Naming />} />
+          <Route path="/coronation" element={<Coronation />} />
+          <Route path="/conference" element={<Conference />} />
+          <Route path="/endyearparty" element={<Endyear />} />
+          <Route path="/productlaunch" element={<Product />} />
+          <Route path="/networking" element={<Networking />} />
+          <Route path="/Award" element={<Award />} />
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/Funeral" element={<Burial />} />
           <Route path="/abouttwc" element={<About />} />

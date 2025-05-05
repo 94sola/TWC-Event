@@ -19,7 +19,7 @@ const posts = [
   },
   {
     title: "Corporate Events That Impress",
-    excerpt: "How to plan unforgettable corporate events that boost morale and impress clients. TWC specializes in creating professional yet engaging events tailored to your company's goals.",
+    excerpt: "How to plan unforgettable corporate events that boost morale and impress clients. TWC Event Services specializes in creating professional yet engaging events tailored to your company's goals.",
     date: "March 15, 2025",
     tag: "Corporate",
     image: conference,
@@ -27,7 +27,7 @@ const posts = [
   },
   {
     title: "Birthday Bash Ideas for All Ages",
-    excerpt: "Creative themes and party hacks for every milestone birthday celebration. TWC knows how to design memorable birthdays that delight guests of all ages.",
+    excerpt: "Creative themes and party hacks for every milestone birthday celebration. TWC Event Services knows how to design memorable birthdays that delight guests of all ages.",
     date: "February 27, 2025",
     tag: "Birthdays",
     image: birthday,
@@ -100,11 +100,11 @@ const Blog = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-5xl font-extrabold text-center text-orange-600 mb-4"
         >
-          ✍️ TWC Blog
+          ✍️ TWC Event Services Blog
         </motion.h2>
 
         <p className="text-center text-gray-700 mb-10 text-lg max-w-2xl mx-auto">
-          Expert tips, event inspiration, and behind-the-scenes stories from TWC.
+          Expert tips, event inspiration, and behind-the-scenes stories from TWC Event Services.
         </p>
 
         {/* Filter Tags */}
@@ -200,7 +200,7 @@ const Blog = () => {
               <p className="text-sm text-gray-500 mb-2">#{selectedPost.tag}</p>
               <p className="text-gray-700 leading-relaxed">
                 {selectedPost.excerpt} <br />
-                More details about the event, services offered, and the incredible experience that TWC delivers.
+                More details about the event, services offered, and the incredible experience that TWC Event Services delivers.
               </p>
 
               {/* Social Sharing */}

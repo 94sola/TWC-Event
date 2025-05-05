@@ -7,6 +7,7 @@ import vid2 from "../assets/image/Akinbola+Sylvia vid.mp4";
 import birthday from "../assets/image/birthday.jpg";
 import Burial from "../assets/image/burial.jpg";
 import corporate from "../assets/image/corporatre.jpg";
+import ErrorBoundary from "./ErrorBoundary";  // Import the ErrorBoundary component
 
 const testimonials = [
   {
@@ -15,7 +16,7 @@ const testimonials = [
     name: "Mr and Mrs. Abimbola",
     eventType: "Wedding",
     message:
-      "TWC made our wedding absolutely magical! From securing the most beautiful hall that suited our style, to coordinating flawlessly with the decorator, caterers, and even handling the DJ and lighting with precision, it was a dream come true. The entire team was incredibly professional and worked tirelessly to ensure everything was on point. Our guests were blown away by the ambience and the flow of the event. We truly felt like royalty!",
+      "TWC Event Services made our wedding absolutely magical! From securing the most beautiful hall that suited our style, to coordinating flawlessly with the decorator, caterers, and even handling the DJ and lighting with precision, it was a dream come true. The entire team was incredibly professional and worked tirelessly to ensure everything was on point. Our guests were blown away by the ambience and the flow of the event. We truly felt like royalty!",
   },
   {
     type: "video",
@@ -23,7 +24,7 @@ const testimonials = [
     name: "Mr and Mrs. Akinbola Family",
     eventType: "Wedding",
     message:
-      "We are grateful to TWC for creating such a memorable event for us. From planning logistics, vendor coordination, and flawless setup to ensuring the timeline was strictly followed, the experience was stress-free. The team was respectful, attentive, and always available to support. Even the entertainment, including the MC and DJ, were top-class. We highly recommend them!",
+      "We are grateful to TWC Event Services for creating such a memorable event for us. From planning logistics, vendor coordination, and flawless setup to ensuring the timeline was strictly followed, the experience was stress-free. The team was respectful, attentive, and always available to support. Even the entertainment, including the MC and DJ, were top-class. We highly recommend them!",
   },
   {
     type: "image",
@@ -31,7 +32,7 @@ const testimonials = [
     name: "Mr Damilola",
     eventType: "Birthday",
     message:
-      "My birthday party was a dream come true! TWC brought my vision to life — from organizing the decor, sound, lighting, to selecting top-notch vendors. They even helped with creative games and coordinated all the surprises! It was fun, lively, and unforgettable. The team’s energy and vibe were everything.",
+      "My birthday party was a dream come true! TWC Event Services brought my vision to life — from organizing the decor, sound, lighting, to selecting top-notch vendors. They even helped with creative games and coordinated all the surprises! It was fun, lively, and unforgettable. The team’s energy and vibe were everything.",
   },
   {
     type: "image",
@@ -39,7 +40,7 @@ const testimonials = [
     name: " The Olabopo Lawanson Family",
     eventType: "Burial",
     message:
-      "Thank you, TWC, for organizing a befitting burial ceremony. Every single detail, from the hall decoration to the program coordination, was managed excellently. The ushering, protocol handling, and reception setup were seamless. You made it a celebration of life, not just a ceremony.",
+      "Thank you, TWC Event Services, for organizing a befitting burial ceremony. Every single detail, from the hall decoration to the program coordination, was managed excellently. The ushering, protocol handling, and reception setup were seamless. You made it a celebration of life, not just a ceremony.",
   },
   {
     type: "image",
@@ -47,7 +48,7 @@ const testimonials = [
     name: "CEO, TechFlow Inc.",
     eventType: "Corporate",
     message:
-      "TWC flawlessly executed our corporate retreat. The planning was meticulous, and the ambiance was spot on. From arranging high-end conference spaces to collaborating with vendors for catering, multimedia, and entertainment, they delivered beyond expectations. It was not only professional but also engaging and inspiring.",
+      "TWC Event Services flawlessly executed our corporate retreat. The planning was meticulous, and the ambiance was spot on. From arranging high-end conference spaces to collaborating with vendors for catering, multimedia, and entertainment, they delivered beyond expectations. It was not only professional but also engaging and inspiring.",
   },
 ];
 
@@ -149,7 +150,7 @@ const Testimonial = () => {
                     onClick={toggleVideo}
                     aria-label={isPlaying ? "Pause Video" : "Play Video"}
                     title={isPlaying ? "Pause" : "Play"}
-                    className="absolute inset-0 flex items-center justify-center text-white text-5xl bg-black/30 hover:bg-black/50 transition rounded-2xl"
+                    className="absolute inset-0 flex items-center justify-center text-white text-4xl md:text-5xl bg-black/30 hover:bg-black/50 transition rounded-2xl"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -168,11 +169,11 @@ const Testimonial = () => {
           )}
         </div>
 
-        <div className="w-full md:w-1/2 text-center md:text-left px-20 space-y-6 animate-slideIn">
+        <div className="w-full md:w-1/2 text-center md:text-left px-6 md:px-20 space-y-6 animate-slideIn">
           <h2 className="text-2xl md:text-3xl font-bold text-orange-700">{name}</h2>
 
-          <div className="border p-4 rounded-xl bg-white shadow-lg h-[400px] overflow-y-auto">
-            <h3 className="text-2xl text-center text-cyan-500 font-semibold mb-4">{eventType} Event</h3>
+          <div className="border p-4 rounded-xl bg-white shadow-lg h-[300px] sm:h-[400px] overflow-y-auto">
+            <h3 className="text-xl md:text-2xl text-center text-cyan-500 font-semibold mb-4">{eventType} Event</h3>
             <p className="text-lg text-gray-700 leading-relaxed font-medium">{message}</p>
           </div>
         </div>
@@ -208,7 +209,6 @@ const Testimonial = () => {
               onClick={toggleMute}
               className="bg-orange-500 hover:bg-orange-600 text-white px-4 md:px-6 py-2 rounded-full shadow-lg text-lg md:text-xl transition duration-300 flex items-center gap-2"
               aria-label={isMuted ? "Unmute Video" : "Mute Video"}
-              title={isMuted ? "Unmute" : "Mute"}
             >
               {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
             </button>
@@ -219,4 +219,10 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+const TestimonialWithBoundary = () => (
+  <ErrorBoundary>
+    <Testimonial />
+  </ErrorBoundary>
+);
+
+export default TestimonialWithBoundary;

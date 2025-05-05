@@ -29,7 +29,7 @@ const Team = () => {
             <h3 className="text-2xl font-semibold text-orange-400">
               Adefunke Kuyoro
             </h3>
-            <h5 className="text-xl text-cyan-400 ">CEO of TWC</h5>
+            <h5 className="text-xl text-cyan-400 ">CEO of TWC Event Services</h5>
             <p className="mt-2 text-sm text-gray-200">
               Our visionary CEO, Adefunke, leads TWC with passion, overseeing strategic growth and organizational direction. With a focus on innovation and excellence, she ensures TWC's sustained success.
             </p>

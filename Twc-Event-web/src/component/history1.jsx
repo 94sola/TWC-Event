@@ -33,7 +33,7 @@ const About = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          Born out of a passion for crafting unforgettable experiences, <strong className="text-orange-500">TWC Event Planning Services</strong> has grown from a humble startup into one of the most respected event curators in the industry. With over a decade of spectacular moments under our belt, we blend <span className="text-pink-600 font-semibold">style</span>, <span className="text-yellow-600 font-semibold">strategy</span>, and a hint of <span className="text-purple-600 font-semibold">sparkle</span> into every celebration.
+          Born out of a passion for crafting unforgettable experiences, <strong className="text-orange-500">TWC Event Services</strong> has grown from a humble startup into one of the most respected event curators in the industry. With over a decade of spectacular moments under our belt, we blend <span className="text-pink-600 font-semibold">style</span>, <span className="text-yellow-600 font-semibold">strategy</span>, and a hint of <span className="text-purple-600 font-semibold">sparkle</span> into every celebration.
         </motion.p>
 
         <motion.p
@@ -42,7 +42,7 @@ const About = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Whether it’s a dazzling wedding, a fun-filled birthday bash, or a sleek corporate soirée — we make the magic happen. From venue design to the final toast, we’ve got your back (and your dance floor). TWC believes every event is a once-in-a-lifetime story, and we’re here to help you tell it in full color and confetti.
+          Whether it’s a dazzling wedding, a fun-filled birthday bash, or a sleek corporate soirée — we make the magic happen. From venue design to the final toast, we’ve got your back (and your dance floor). TWC Event Services believes every event is a once-in-a-lifetime story, and we’re here to help you tell it in full color and confetti.
         </motion.p>
       </div>
 
