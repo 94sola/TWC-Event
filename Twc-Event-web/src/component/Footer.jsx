@@ -35,7 +35,7 @@ const Footer = () => {
      
       <div className="max-w-9xl bg-white text-black p-8 rounded-lg shadow-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:px-20 px-8 gap-12 text-center md:text-left">
         {/* Logo & Description */}
-        <div data-aos="fade-up">
+        <div className="space-y-5">
           <Link to="/" className="block">
             <img
               src={logo}
@@ -43,7 +43,7 @@ const Footer = () => {
               className="h-20 w-32 object-contain mx-auto md:mx-0"
             />
             <h5 className="text-xl font-semibold text-cyan-500 mt-3">
-              TWC Event
+              TWC Event Services
             </h5>
           </Link>
           <p className="text-md  text-gray-900 mt-3">
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="space-y-5 mt-20" data-aos="fade-up" data-aos-delay="200">
+        <div className="space-y-5 mt-20" >
           <h3 className="text-xl font-bold text-cyan-500">Contact Info</h3>
           <div className="flex items-start gap-3">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="text-cyan-500" />
@@ -61,7 +61,7 @@ const Footer = () => {
           <div className="flex items-start gap-3">
             <FontAwesomeIcon icon={faEnvelope} className="text-cyan-500" />
             <p>
-              <a href="mailto:twceventservices@gmail.com" className="hover:underline">
+              <a href="mailto:twcevent16@gmail.com " className="hover:underline">
                 twceventservices@gmail.com
               </a>
             </p>
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter + Socials */}
-        <div data-aos="fade-up" data-aos-delay="400">
+        <div className="space-y-5 mt-20">
           <h3 className="text-xl font-bold text-cyan-500 mb-4">Subscribe to Newsletter</h3>
           <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
             <input
@@ -124,8 +124,8 @@ const Footer = () => {
       </div>
 
       <div className="text-center space-y-4 text-lg mt-10 md:text-base text-black ">
-        <p>&copy; {year} TWC Event Planning Services. All rights reserved.</p>
-        <p>Designed and Developed by the TWC Team — crafting creativity with excellence.</p>
+        <p>&copy; {year} TWC Event Services. All rights reserved.</p>
+        <p>Designed and Developed by the TWC Event Services Team — crafting creativity with excellence.</p>
       </div>
     </footer>
   );

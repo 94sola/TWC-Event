@@ -18,10 +18,25 @@ import About from './component/abouttwc';
 import Wedding from './component/wedd';
 import History from './component/twchistory';
 import Gallery from './component/gallerytwc';
-import Blog from './component/blog';
 import Contact from './component/contact';
 import Mission from './component/mission';
 import Testimonial from './component/testimonial';
+import Award from './component/award';
+import Product from './component/product';
+import Party from './component/party';
+import Naming from './component/naming';
+import Conference from './component/conference';
+import Coronation from './component/coronation';
+import House from './component/housewarming';
+import Birthday from './component/birthday';
+import Endyear from './component/party';
+import Networking from './component/networking';
+import BlogList from './component/Blogpages/BlogList';
+import BlogDetailPage from './component/Blogpages/BlogDetailPage';
+import AdminDashboard from './component/Blogpages/AdminDashboard';
+
+// Import ErrorBoundary
+import ErrorBoundary from './component/ErrorBoundary';
 
 function App() {
   useEffect(() => {
@@ -34,22 +49,36 @@ function App() {
       <Router>
         <Nav />
 
-        <Routes>
-          <Route path="/" element={<Twc />} />
-          <Route path="/Corporate" element={<Corporate />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/social" element={<Social />} />
-          <Route path="/wedding" element={<Wedding />} />
-          <Route path="/Funeral" element={<Burial />} />
-          <Route path="/abouttwc" element={<About />} />
-          <Route path="/teams" element={<Team />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/gallerytwc" element={<Gallery />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/mission" element={<Mission />} />
-          <Route path="/testimonial" element={<Testimonial />} />
-        </Routes>
+        <ErrorBoundary>
+          <Routes>
+            <Route path="/" element={<Twc />} />
+            <Route path="/corporate" element={<Corporate />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/social" element={<Social />} />
+            <Route path="/birthday" element={<Birthday />} />
+            <Route path="/housewarming" element={<House />} />
+            <Route path="/naming" element={<Naming />} />
+            <Route path="/coronation" element={<Coronation />} />
+            <Route path="/conference" element={<Conference />} />
+            <Route path="/endyearparty" element={<Endyear />} />
+            <Route path="/productlaunch" element={<Product />} />
+            <Route path="/networking" element={<Networking />} />
+            <Route path="/award" element={<Award />} />
+            <Route path="/wedding" element={<Wedding />} />
+            <Route path="/funeral" element={<Burial />} />
+            <Route path="/abouttwc" element={<About />} />
+            <Route path="/teams" element={<Team />} />
+            <Route path="/history" element={<History />} />
+            <Route path="/gallerytwc" element={<Gallery />} />
+            <Route path="/mission" element={<Mission />} />
+            <Route path="/testimonial" element={<Testimonial />} />
+
+            {/* BLOG ROUTES */}
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:id" element={<BlogDetailPage />} />
+            <Route path="/admin/blog" element={<AdminDashboard />} />
+          </Routes>
+        </ErrorBoundary>
 
         <Footer />
       </Router>

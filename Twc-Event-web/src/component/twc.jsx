@@ -76,7 +76,7 @@ const About = () => {
             Who We Are
           </h2>
           <p className="text-base md:text-lg text-orange-100 leading-relaxed mb-6">
-           At Twcevents, we believe every event is an opportunity to leave a lasting impression. 
+           At Twc Event Services, we believe every event is an opportunity to leave a lasting impression. 
           </p>
 
           {/* CTA Button */}

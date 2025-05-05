@@ -9,7 +9,7 @@ const Events = () => {
           Our Story & Vision
         </h5>
         <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-          At TWC, our journey began with a passion for creating meaningful
+          At TWC Event Services, our journey began with a passion for creating meaningful
           moments. Over the years, we've evolved into a full-service event
           planning company known for elegance, creativity, and care. Our
           vision is simple yet bold — to bring your dreams to life with
