@@ -2,8 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
-import { db } from '../firebase';
-import BlogDetail from '../components/BlogDetail';
+import { db } from '../../firebase/config';
 
 const BlogDetailPage = () => {
   const { id } = useParams();

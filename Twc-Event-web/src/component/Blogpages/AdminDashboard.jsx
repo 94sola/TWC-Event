@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { db, storage } from '../firebase';
+import { db, storage } from '../../firebase/config';
 
 const AdminDashboard = () => {
   const [form, setForm] = useState({ title: '', tag: '', content: '', excerpt: '' });

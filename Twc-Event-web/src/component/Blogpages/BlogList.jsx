@@ -1,8 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from '../firebase';
-import BlogCard from '../components/BlogCard';
+import { db } from '../../firebase/config';
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
