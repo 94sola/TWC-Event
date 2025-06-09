@@ -8,36 +8,43 @@ const testimonials = [
     name: "Mrs Titi Akinjogbin",
     title: "Social Event",
     event: "Elegant Lagos Funeral",
-    text: "Thank you for another excellent event with no hiccups. Hope next time it's under happier times. TWC Event Planning Services made the entire process seamless, and we were able to focus on honoring our loved one. Everything was executed beautifully, making a tough day a little easier to bear."
+    text: "Thank you for another excellent event with no hiccups. Hope next time it's under happier times. TWC Event Services made the entire process seamless, and we were able to focus on honoring our loved one. Everything was executed beautifully, making a tough day a little easier to bear."
   },
   {
     id: 2,
     name: "Mr and Mrs Adeyemi",
     title: "Social Event",
     event: "A Fantastic Wedding Banquet",
-    text: "Thank you so much, we couldn't have done this without you! TWC's meticulous attention to detail made our wedding banquet an unforgettable experience. Every moment, every decoration, and every gesture was perfectly coordinated to give us the best day of our lives."
+    text: "Thank you so much, we couldn't have done this without you! TWC Event Services meticulous attention to detail made our wedding banquet an unforgettable experience. Every moment, every decoration, and every gesture was perfectly coordinated to give us the best day of our lives."
   },
   {
     id: 3,
     name: "Mrs Remi Fadoju",
     title: "Social Event",
     event: "A Classic Birthday Party",
-    text: "My 50th birthday felt like a royal affair! TWC added sparkle, joy, and precision. Highly recommend! From the decor to the entertainment, every detail was thoughtfully planned and executed with care. I felt like royalty and all my guests had a fantastic time."
+    text: "My 50th birthday felt like a royal affair! TWC Event Services added sparkle, joy, and precision. Highly recommend! From the decor to the entertainment, every detail was thoughtfully planned and executed with care. I felt like royalty and all my guests had a fantastic time."
   },
   {
     id: 4,
     name: "Ajumogobia & Okeke",
     title: "Corporate Event",
     event: "Conferment Ceremony",
-    text: "First trials are always a risk, but your delivery was classy and lively. Commendations have been pouring in! TWC managed our conferment ceremony with such professionalism. They understood our vision and ensured every aspect of the event was executed flawlessly. We’ve received numerous compliments."
+    text: "First trials are always a risk, but your delivery was classy and lively. Commendations have been pouring in! TWC Event Services managed our conferment ceremony with such professionalism. They understood our vision and ensured every aspect of the event was executed flawlessly. We’ve received numerous compliments."
   },
   {
     id: 5,
     name: "Mrs Bunmi Owope",
     title: "Corporate Event",
     event: "Launching",
-    text: "Impressive organization. The energy, elegance, and excellence of the event were beyond expectations! TWC’s team was a joy to work with. They delivered a seamless experience from start to finish, and I was able to fully enjoy the event without worrying about the details."
-  }
+    text: "Impressive organization. The energy, elegance, and excellence of the event were beyond expectations! TWC Event Services team was a joy to work with. They delivered a seamless experience from start to finish, and I was able to fully enjoy the event without worrying about the details."
+  },
+  {
+    id: 6,
+    name: "Mr Seun & Mrs Bamike",
+    title: "Social Event",
+    event: "Elegant Lagos Wedding",
+    text: "From the moment we said yes to TWC Event Services, our dream wedding began to take shape. Every detail — from the breathtaking décor to the flawless coordination — was handled with such heart and excellence. You didn’t just plan our wedding; you crafted a magical experience that left us and our guests in awe. Thank you for turning our vision into a day we’ll cherish forever."
+ }
 ];
 
 const lineAnimation = {
@@ -67,7 +74,8 @@ const TestimonialSlider = () => {
     <section className="w-full bg-gradient-to-b from-cyan-500 to-cyan-600 text-white py-16 px-4 md:px-12 lg:px-24 font-sans">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-10">Hear From Our Happy Clients</h2>
 
-      <div className="relative max-w-6xl mx-auto">
+      {/* Desktop View */}
+      <div className="hidden md:block relative max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-6 px-2">
           <button
             onClick={prevSlide}
@@ -116,6 +124,56 @@ const TestimonialSlider = () => {
             </motion.div>
           </AnimatePresence>
         </div>
+      </div>
+
+      {/* Mobile View */}
+      <div className="md:hidden max-w-md mx-auto">
+        <div className="flex justify-between items-center mb-4 px-4">
+          <button
+            onClick={prevSlide}
+            className="text-white bg-cyan-800 p-2 rounded-full hover:bg-cyan-600 transition"
+          >
+            <FaChevronLeft size={18} />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="text-white bg-cyan-800 p-2 rounded-full hover:bg-cyan-600 transition"
+          >
+            <FaChevronRight size={18} />
+          </button>
+        </div>
+
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={testimonial.id}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -30 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white text-gray-800 p-6 rounded-xl shadow-md mx-4"
+          >
+            <div className="mb-3">
+              <h3 className="text-lg font-bold text-cyan-800">{testimonial.name}</h3>
+              <p className="text-sm text-gray-800">{testimonial.title}</p>
+              <p className="text-sm text-orange-600 font-medium">{testimonial.event}</p>
+            </div>
+
+            <FaQuoteLeft className="text-cyan-400 text-xl mb-2" />
+            {testimonial.text.split(". ").map((line, i) => (
+              <motion.p
+                key={i}
+                custom={i}
+                variants={lineAnimation}
+                initial="hidden"
+                animate="visible"
+                className="text-gray-700 italic text-base leading-relaxed"
+              >
+                {line.trim()}
+              </motion.p>
+            ))}
+            <FaQuoteRight className="text-cyan-400 text-xl mt-4 float-right" />
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );

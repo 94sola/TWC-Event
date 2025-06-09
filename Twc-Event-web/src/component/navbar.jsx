@@ -45,7 +45,7 @@ const Nav = () => {
             { label: "End of Year Party", link: "/endyearparty" },
             { label: "Product Launching", link: "/productlaunch" },
             { label: "Networking Events", link: "/networking" },
-            { label: "Award cermony", link: "/Award" },
+            { label: "Award ceremony", link: "/Award" },
           ],
         },
       ],
@@ -61,7 +61,8 @@ const Nav = () => {
       title: "About",
       links: [
         { label: "Our Story", link: "/history" },
-        { label: "Mission & vision", link: "/abouttwc" },
+        { label: "Mission & vision", link: "/mission" },
+        { label: "FAQ", link: "/abouttwc" },
       ],
     },
   ];
