@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { db } from "../firebase/config";
-import { addDoc, collection } from "firebase/firestore";
+// import { db } from "../firebase/config";
+// import { addDoc, collection } from "firebase/firestore";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -75,17 +75,22 @@ const Contact = () => {
       setIsSubmitting(true);
       
       try {
-        const contactsRef = collection(db, 'contacts');
-        const contactData = {
-          ...formData,
-          timestamp: new Date().toISOString()
-        };
+        // const contactsRef = collection(db, 'contacts');
+        // const contactData = {
+        //   ...formData,
+        //   timestamp: new Date().toISOString()
+        // };
         
-          await addDoc(contactsRef, contactData, `${formData.name[0] + '-' + Date.now()}`);
+          // await addDoc(contactsRef, contactData, `${formData.name[0] + '-' + Date.now()}`);
           await emailjs
-      .sendForm('service_uxfr24e', 'template_qcao3it', formRef.current,  {
-        publicKey: 'NjrX6NBh7EcbyLUNA',
+      .sendForm('service_pxqfldl', 'template_c3nhddl', formRef.current,  {
+        publicKey: 'yPCpGiBEHqjeWE4ls',
       })
+
+      //   await emailjs
+      // .sendForm('service_uxfr24e', 'template_qcao3it', formRef.current,  {
+      //   publicKey: 'NjrX6NBh7EcbyLUNA',
+      // })
         
         // Reset form and show success toast
         setFormData({
